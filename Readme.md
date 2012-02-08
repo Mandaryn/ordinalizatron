@@ -1,4 +1,4 @@
-Ordinalize
+Ordinalizatron
 ==========
 
 Simple way to get ordinal numbers for your collections.
@@ -6,14 +6,14 @@ Simple way to get ordinal numbers for your collections.
 Example
 -------
 
-Without ordinalize:
+Without ordinalizatron:
 
     <% User.paginate(page: 5).each_with_index do |user,index| %>
         <% ordinal = get_the_offset_part_helper + 1 + index %>
         <%= "#{ordinal}. #{user.name} %>
     <% end %>
 
-With ordinalize:
+With ordinalizatron:
 
     <% User.paginate(page: 5).each_with_ordinal_number do |user,ordinal_number| %>
         <%= "#{ordinal_number}. #{user.name} %>

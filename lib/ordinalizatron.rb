@@ -1,6 +1,6 @@
-require "ordinalize/version"
+require "ordinalizatron/version"
 
-module Ordinalize
+module Ordinalizatron
   def each_with_ordinal_number(options = {}, &block)
     options.reverse_merge!(offset: find_offset)
     self.each_with_index do |element, index|
@@ -16,4 +16,4 @@ module Ordinalize
   end
 end
 
-Array.send(:include, Ordinalize)
+Array.send(:include, Ordinalizatron)

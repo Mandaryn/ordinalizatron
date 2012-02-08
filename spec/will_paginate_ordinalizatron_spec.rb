@@ -1,7 +1,7 @@
 require 'spec_helper'
 require 'support/will_paginate/post'
 
-describe Ordinalize do
+describe Ordinalizatron do
   before(:all) do
     setup_database
     i = 0

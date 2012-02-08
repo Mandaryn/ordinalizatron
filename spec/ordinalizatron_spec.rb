@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Ordinalize do
+describe Ordinalizatron do
   describe "array" do
     let(:array) { ['dupa', nil, 1, Object.new] }
     it "should add proper ordinal numbers" do
